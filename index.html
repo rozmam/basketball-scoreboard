@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Scoreboard</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <!-- Home team -->
+        <section aria-label="Home team">
+            <h2 id="home-btn">HOME</h2>
+            <div class="score-display">
+                <p class="semafor-st" id="home-semafor">0</p>
+            </div>
+            <div class="ikone">
+                <div class="ikona">
+                    <button 
+                        onclick="plusOneHome()" 
+                        aria-label="Add one point to home team">+1
+                    </button>
+                    <button 
+                        onclick="plusTwoHome()"
+                        aria-label="Add two points to home team">+2
+                    </button>
+                    <button 
+                        aria-label="Add three points to home team"
+                        onclick="plusThreeHome()">+3
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guest team -->
+        <section aria-label="Home team">
+            <h2 id="guest-btn">GUEST</h2>
+            <div class="score-display">
+                <p class="semafor-st" id="guest-semafor">0</p>
+            </div>
+            <div class="ikone">
+                <div class="ikona">
+                    <button 
+                        aria-label="Add one point to guest team"
+                        onclick="plusOneGuest()">+1
+                    </button>
+                    <button 
+                        aria-label="Add two points to guest team"
+                        onclick="plusTwoGuest()">+2
+                    </button>
+                    <button
+                        aria-label="Add three points to guest team"
+                        onclick="plusThreeGuest()">+3
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- New game btn -->
+    <div id="newgame-wrapper">
+        <button 
+            id="newgame-btn"
+            onclick="newGame()">NEW GAME
+        </button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
